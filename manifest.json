@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Task",
+    "description": "Add 'Welcome' ",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/icon_16.png",
+        "48": "/images/icon_48.png",
+        "128": "/images/icon_128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/icon_16_2.png",
+            "48": "/images/icon_48_2.png",
+            "128": "/images/icon_128_2.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://example.com/"],
+        "js": ["main.js"]
+    }]
+}
